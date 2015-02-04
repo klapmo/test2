@@ -1,0 +1,19 @@
+h1 {
+	text-align: center;
+}
+
+p {
+	font-family: Verdana;
+	color:red;
+	text-align: center;
+}
+
+.name-title {
+	
+	color: blue;
+}
+
+.position {
+	
+	color:green;
+}
