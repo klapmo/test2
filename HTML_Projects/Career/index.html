@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Clear floats after the div */
+div {
+  clear:right;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Career</h1>
+  <p>A Journey Across Tech</p>
+</div>
+
+<div class="topnav">
+    <a href="../index.htm">Home</a>
+    <a href="../About/index.html">About Me</a>
+    <a href="../Career/index.html">My Career</a>
+    <a href="../Travels/index.html">My Travels</a>
+    <a href="mailto:dklapman@gmail.com" style="float:right">Get In Touch</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Why Coding?</h2>
+      <h5>How did we get here?, Apr 1, 2019</h5>
+      <div class="fakeimg"></div>
+      <img src="../coding.jpg" alt="Coding">
+      <p>The decision to switch gears and get into coding is not one I took lightly. In fact, I had been toying with it since 2014. Back then I had just left the company I was working for and 
+        wanted to explore coding, but wasn't in the best position to 1. spend money on a bootcamp and 2. not have an income. So I shelved the idea and took another job that turned out to be great, 
+        albeit in the same function that I was in previously. A few years passed, I was successful in that role, and then stepped into a leadership role. Again, further ingratiating myself into that role and 
+        function. It became too late to stop what I was doing.<br>
+        <br>I accepted a job at ActiveCampaign that seemed great, but the more I settled in, the more I realized my focus would be in areas I didn't have expertise in, but 
+        more importantly, any interest in. The reality is, I can <strong>do the job</strong> but I <strong>don't want to do the job.</strong> Thankfully, having recently been married and doing a better job of saving 
+        over the past years, I was in a position to re-evaluate my career and jump on my wife's insurance while I did so. Enter coding. I was able to start committing time to it on CodeAcademy and feel out the different 
+        languages available to me. I studied the basics; HTML, CSS, Javascript, but also Ruby and Python. Python was the one I found most interesting and preferred the syntax of. With a great support system, I was encouraged 
+        to give this a shot as I've always been interested in the T&P side of the orgs I've worked in. Now I'm going to see if I can hang!
+      </p>
+    </div>
+    <div class="card">
+      <h2>Career History</h2>
+      <h5>My Journey, Apr 1, 2019</h5>
+      <div class="fakeimg"></div>
+      <img src="ybr.jpg" alt="Yellow Brick Road">
+      <p>A long, winding road...</p>
+      <p>Right out of college, I accepted a sales job with CDW and began my career. I learned a ton about how to sell, all the technology that CDW could provide customers, and 
+        that I hated being in a cold-calling sales role. Well, that and the fact that I worked in the suburbs (Vernon Hills, IL) and lived with my parents. Not the coolest start to a career. 
+        My friend worked at Groupon and was heavily suggesting I take a job there, move to the city, and start living my life. I took his suggestion, jumped over to Groupon, and had my first taste of 
+        Chicago's tech scene. Me and literally everyone in Chicago around the age of 22 was working there. It was also sales, but had such a different vibe to it. I loved it, despite not liking what I did. 
+        After a few years of being a part of taking the company public, moving up to the premier team, New York, and honing my skills, I wanted a smaller experience.<br>
+        <br>I took a job at Fooda, a company of 13 when I joined, and started doing some great work. The best proof of that is the fact that Fooda is now a multi-million dollar company 
+        making a huge footprint in Chicago and other cities. I'm proud of the work I did there, opening new markets and making a small company something much bigger. Things ultimately didn't work out as we grew 
+        and I moved to Raise, a gift card reselling platform.<br>
+        <br>Raise was a wild exprience, one that I'll never forget. They also gave me an opportunity to lead my own team, which was huge in my career development. I started not only helping our customers, but also 
+        helping my team achieve their personal goals, which was rewarding. Exhausting, too. After 3 years, we underwent some changes and eliminated my entire department. Bittersweet, but an opportunity for me to 
+        take what I learned to another company.<br>
+        <br>This is where I joined ActiveCampaign and fell into a role where I was both leading a team, but also developing the customer onboarding strategy for the entire company. 
+        This was not my wheelhouse, I had never onboarded customers to a marketing plaform, much less one that I didn't fully understand yet. It was in doing this that I began to realize I wanted something new. 
+        I had been following this career path as it came to me, but never stopped to think if it was what I wanted. After thinking it through, I decided it wasn't the right fit for me, and that I wanted more exposure to the 
+        T&P side of the business. I wouldn't be able to get there without some new skills, so I started researching bootcamps and ended up here.
+      </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="realimg"></div>
+      <img src="../David.jpg" alt="David Headshot" width=100%>
+      <p>It's hard to summarize myself in a short blurb, but I am a tech lover, video game aficianado, and eater of all foods.
+        Recently married, I've been with my wife for nearly 10 years, though just shy of 1 year married. I am a dog fan (boo cats!)
+        and cannot wait to have one of my own. 
+      </p>
+    </div>
+    <div class="card">
+      <h3>Some Killer Pictures</h3>
+      <div class="realimg"></div>
+      <img src="../30th Bday - Piccolo Sogno.jpg" alt="Birthday" width=50%>
+      <div class="realimg"></div>
+      <img src="../Mia Garbage Can.JPG" alt="Mia" width=50%>
+      <div class="realimg"></div>
+      <img src="../Grand Canyon Lookout.jpg" alt="Grand Canyon" width=50%>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>While I tend to not be very active on social media, I'm still worth the follow.
+        See what I'm up to by following <strong>@klapmo</strong> on basically all platforms. I'm pretty great at branding
+        and have the same user across (nearly) every platform.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Thanks for reading!</h2>
+</div>
+
+</body>
+</html>

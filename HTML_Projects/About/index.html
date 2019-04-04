@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Real image */
+.realimg {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>About Me</h1>
+  <p>What can I tell ya...</p>
+</div>
+
+<div class="topnav">
+    <a href="../index.htm">Home</a>
+    <a href="../About/index.html">About Me</a>
+    <a href="../Career/index.html">My Career</a>
+    <a href="../Travels/index.html">My Travels</a>
+    <a href="mailto:dklapman@gmail.com" style="float:right">Get In Touch</a>
+  </div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>My Hobbies</h2>
+      <h5>Hobbies, Apr 1, 2019</h5>
+      <div class="realimg"></div>
+      <img src="movies.jpg" alt="Movies and Games" width=75%>
+      <p>I'm a big movie guy</p>
+      <p>I'll just put this out there, I'm a big movie guy. Love watching them, talking about them, reading about them. You name it, I'll partake. So much so, that I've even kept a running 
+        Google Sheet of each movie I watch per year (for the first time), with a grade scale and what genre it's in. Over the years I've layered in more data, so now I can go back and run 
+        reporting on movies I've seen and my taste over the years. I realized that this added layer would be considered nerdy by some, but for me it's a time capsule of what my year was like 
+        or how I was feeling. It's something fun to share, as well, with friends looking for recommendations. I am trying to do this with all the media I consume, including books, TV, and video games.<br>
+        <br>I also love video games. Growing up, my dad and I would play Zelda until one of us had to fall asleep. Spoiler alert: I didn't sleep much as a kid. Now I'm 30 and things really haven't changed, 
+        except for the sleeping thing. I still love the puzzle oriented games, but have developed a taste for FPS and these newfangled Battle Royale games (Apex Legends > Fortnite don't @ me). This is less enjoyable for my wife 
+        but she's a good sport about it.<br>
+        <br>Finally, I'm trying to read 2 books a month as part of my 2019 intentions, which hasn't been going great. I love Stephen King books, and really all fiction, but I'm challenging myself to read 
+        a self-help/business book each month as well. I think this is what's derailing me. I love sci-fi, horror, and fantasy - Harry Potter and IT being my favorite books ever. I tend to pick an author and read 
+        as much as I can of their work. <cite>Haroun and the Sea of Stories</cite>, by Salman Rushdie, is one of those must-read, never heard of books that I will recommend to the unfortunate reader of my page.
+      </p>
+    </div>
+    <div class="card">
+      <h2>Creative Outlets</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="realimg"></div>
+      <img src="brain.jpeg" alt="Brain">
+      <p>While I'm a pretty process-oriented person, I do like to stretch my creative wings once in a while. I love to draw, or really doodle if I'm being specific, 
+        and wish I did more of it. I like doing puzzles, too, which I think lends itself nicely to coding. I like to understand what the desired final product is and then working 
+        backwards to make that happen.<br>
+        <br>Music is an outlet for me as well, letting me get lost in it while I work on things. I'm a huge Grateful Dead fan, which is what I'm likely listening to if you see me wearing my headphones 
+        and in the zone. My friends and I started a vinyl club, where each month we are randomly assigned someone else and buy a record for them. There are not requirements as to the genre, no requests accepted, 
+        and it makes for a cool project. I've since grown my collection considerably with music I'd have otherwise never considered or heard. For me, this is where my creative mind awakens. I love a challenge 
+        but need to have the right setting to tackle it with my full effort. 
+      </p>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="realimg"></div>
+      <img src="../David.jpg" alt="David Headshot" width=100%>
+      <p>It's hard to summarize myself in a short blurb, but I am a tech lover, video game aficianado, and eater of all foods.
+        Recently married, I've been with my wife for nearly 10 years, though just shy of 1 year married. I am a dog fan (boo cats!)
+        and cannot wait to have one of my own. 
+      </p>
+    </div>
+    <div class="card">
+      <h3>Some Killer Pictures</h3>
+      <div class="realimg"></div>
+      <img src="../30th Bday - Piccolo Sogno.jpg" alt="Birthday" width=50%>
+      <div class="realimg"></div>
+      <img src="../Mia Garbage Can.JPG" alt="Mia" width=50%>
+      <div class="realimg"></div>
+      <img src="../Grand Canyon Lookout.jpg" alt="Grand Canyon" width=50%>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>While I tend to not be very active on social media, I'm still worth the follow.
+        See what I'm up to by following <strong>@klapmo</strong> on basically all platforms. I'm pretty great at branding
+        and have the same user across (nearly) every platform.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Thanks for reading!</h2>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Clear floats after the div */
+div {
+  clear:right;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.realimg {
+  max-width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>David's Portfolio</h1>
+  <p>Who I am. What I'm about. Where I've been.</p>
+</div>
+
+<div class="topnav">
+  <a href="../index.htm">Home</a>
+  <a href="About/index.html">About Me</a>
+  <a href="career/index.html">My Career</a>
+  <a href="travels/index.html">My Travels</a>
+  <a href="mailto:dklapman@gmail.com" style="float:right">Get In Touch</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>What's New?</h2>
+      <h5>Personal Updates, April 2, 2019</h5>
+      <div class="realimg"></div>
+      <img src="coding.jpg" alt="Coding">
+      <p>Let me bring you up to speed...</p>
+      <p>So, recently I left my role as a Manager of the Customer Success team at ActiveCampaign. 
+        Initially I was brought on to lead a standard CSM team, responsible for churn, upsells, and retention.
+        Upon arriving, I found that I would be responsible for developing the onboarding plan for our entire org,
+        not only for managed accounts, but unmanaged, and everyone in between. This task was far outside my wheelhouse
+        and ultimately was a bad fit for me. I didn't have a developed point-of-view, which got in the way of me performing
+        at the level I am used to.
+      </p>
+    </div>
+    <div class="card">
+      <h2>All Good in the Neighborhood</h2>
+      <h5>How I'm Spending my Time, April 2, 2019</h5>
+      <div class="realimg"></div>
+      <img src="wickepark.jpg" alt="Wicker Park" width=80%>
+      <p>As I get ready for class to start...</p>
+      <p>In the lead up to our 10-week Python course, I have been spending a lot of time getting to know the neighborhood
+        that I've lived in for 5+ years! I make sure that I try somewhere new for lunch every day, since the options are endless
+        it's easy to loop back to your favorite place to avoid the decision making process. I've begun keeping a list of all the lunch
+        specials in the area so I can be smart about increasing variety. My hope is to build a webapp for myself to help in that process. 
+        Trust me, putting that on your wife is the fastest way to either a bad time, or no dinner.
+        Speaking of which, I recently got married! Below are a few choice shots from our amazing honeymoon. Take a look!
+      </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="realimg"></div>
+      <img src="David.jpg" alt="David Headshot" width=100%>
+      <p>It's hard to summarize myself in a short blurb, but I am a tech lover, video game aficianado, and eater of all foods.
+        Recently married, I've been with my wife for nearly 10 years, though just shy of 1 year married. I am a dog fan (boo cats!)
+        and cannot wait to have one of my own. 
+      </p>
+    </div>
+    <div class="card">
+      <h3>Some Killer Pictures</h3>
+      <div class="realimg"></div>
+      <img src="30th Bday - Piccolo Sogno.jpg" alt="Birthday" width=50%>
+      <div class="realimg"></div>
+      <img src="Mia Garbage Can.JPG" alt="Mia" width=50%>
+      <div class="realimg"></div>
+      <img src="Grand Canyon Lookout.jpg" alt="Grand Canyon" width=50%>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>While I tend to not be very active on social media, I'm still worth the follow.
+        See what I'm up to by following <strong>@klapmo</strong> on basically all platforms. I'm pretty great at branding
+        and have the same user across (nearly) every platform.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Thanks for reading!</h2>
+</div>
+
+</body>
+</html>
